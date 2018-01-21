@@ -1,0 +1,236 @@
+body
+{
+    background-image: url("newton.gif");
+    background-size: cover;
+    color: black; 
+    font-size: 95.5%; /* Folosim procent ca textul sa fie fluid, sa se poata modifica marimea*/
+    font-family: Arial;
+    line-height: 1.5; /* Spatierea */
+    text-align: left;
+}
+a
+{
+    text-decoration: none; /* Decoram link-urile */
+}
+a:link, a:visited
+{
+    color: blue; /* Decoram doar link-urile vizitate */
+}
+a:hover, a:active
+{
+    background-color: blue;
+    color: white;
+}
+.body
+{
+    margin: 0 auto;
+    width: 70%;
+    clear: both; /* specifică pe care laturi ale unui element, elementelor plutitoare nu li se permite să plutească */ 
+}
+.mainHeader img
+{
+    width: 30%;
+    height: auto;
+    margin: 2% 0 1% 0;
+}
+.mainHeader nav
+{
+    background-color: gray;
+    height: 40px;
+    margin-top: 1%;
+    border-radius: 5px;
+}
+.mainHeader nav ul
+{
+    list-style: none;
+    margin: 0 auto;
+}
+.mainHeader nav ul li
+{
+    float: left;
+}
+.mainHeader nav a:link, .mainHeader nav a:visited
+{
+    color: white;
+    display: inline-block;
+    padding: 10px 25px;
+    height: 20px;
+}
+.mainHeader nav a:hover, .mainHeader nav a:active, .mainHeader nav .active a:link, .mainHeader nav .active a:visited
+{
+    background-color: blue;
+    color: black;
+    text-shadow: none;
+}
+.mainHeader nav ul li a
+{
+    border-radius: 5px; /* Face ca bordura sa fie rotunda, nu patrata */
+}
+.mainContent
+{
+    line-height: 25px;
+}
+.content 
+{
+    width: 70%;
+    float: left;
+}
+.topContent, .bottomContent
+{
+    background-color: white;
+    border-radius: 5px;
+    padding: 3% 5%;
+    margin: 2% 0;
+}
+.postInfo
+{
+    font-style: italic;
+    color: lightslategray;
+    font-size: 85%;
+}
+.top-sidebar, .middle-sidebar
+{
+    width: 21%;
+    float: right;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2% 3%;
+    margin: 2% 0 0 3%;
+}
+.bottom-sidebar
+{
+    width: 21%;
+    float: right;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2% 3%;
+    margin: 2% 0 2% 3%;
+}
+.mainFooter
+{
+    width: 100%;
+    height: 40%;
+    float: left;
+    border-radius: 5px;
+    background-color: gray;
+    margin: 2% 0;
+}
+.mainFooter p
+{
+    width: 92%;
+    margin: 1% auto;
+    color: white;
+}
+.search-container
+{
+    float: right;
+    margin-bottom: 1%;
+}
+nav input[type=text] 
+{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+nav .search-container button 
+{
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+nav .search-container button:hover 
+{
+    background: #ccc;
+}
+@media only screen and (min-width: 150px) and (max-width: 600px)
+{
+    .body
+    {
+        width: 90%;
+        font-size: 95%;
+    }
+    .mainHeader img
+    {
+        width: 100%;
+    }
+    .mainHeader nav
+    {
+        height: 160px;
+    }
+    .mainHeader nav ul
+    {
+        padding-left: 0;
+    }
+    .mainHeader nav ul li
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .mainHeader nav a:link, .mainHeader nav a:visited
+    {
+        padding: 10px 25px;
+        height: 20px;
+        display: block;
+    }
+    .content 
+    {
+        width: 100%;
+        float: left;
+        margin-top: 2%;
+    }
+    .postInfo
+    {
+        display: none;
+    }
+    .topContent
+    {
+        margin: 2% 0 4% 0;
+    }
+    .bottomContent
+    {
+        margin-top: 3%;
+    }
+    .top-sidebar, .middle-sidebar, .bottom-sidebar
+    {
+        width: 95%;
+        padding: 2% 3%;
+        margin: 5% 0 0 0;
+    }
+}
+.table
+{
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+}
+.tableHead
+{
+    border: 1px solid black;
+    background-color: lightslategray;
+}
+.textStyle
+{
+    color: blue;
+    font-size: 25px;
+}
+.formulaStyle
+{
+    color: black;
+    font-size: 20px;
+    line-height: 150%;
+    margin-left: 10%;
+    font-style: italic;
+}
+.radicalStyle
+{
+    white-space: nowrap;
+    font-size: larger;
+}
